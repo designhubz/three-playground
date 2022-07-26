@@ -13,9 +13,9 @@ const config = {
     module: {
         rules: [
             { test: /\.ts$/, use: 'ts-loader' },
+            { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             { test: /\.glsl$/, use: 'raw-loader' },
             { test: /\.html$/, use: 'raw-loader' },
-            { test: /\.css$/, use: 'raw-loader' },
             { test: /\.txt$/, use: 'raw-loader' }
         ]
     },
