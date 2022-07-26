@@ -1,0 +1,37 @@
+{
+  "name": "@designhubz/three-playground",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "description": "Kickstarter",
+  "author": "DESIGNHUBZ",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/designhubz/three-playground.git"
+  },
+  "scripts": {
+    "test": "mocha --reporter list",
+    "build": "rimraf build && webpack --config webpack.config.js --env production",
+    "start": "webpack --config webpack.config.js -w"
+  },
+  "dependencies": {
+    "three": "^0.142.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.6.1",
+    "@types/three": "^0.142.0",
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.3.1",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
